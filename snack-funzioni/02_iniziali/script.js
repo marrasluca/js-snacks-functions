@@ -5,9 +5,12 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
 
+function estraiIniziali(arr) {
+    return arr.map(nome => nome[0]);
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+console.log(estraiIniziali(names));
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]

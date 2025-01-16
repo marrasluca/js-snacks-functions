@@ -4,10 +4,12 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
+function filtraPerLettera(arr, lettera) {
+    return arr.filter(nome => nome[0].toUpperCase() === lettera.toUpperCase());
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+console.log(filtraPerLettera(names, "A"));
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
